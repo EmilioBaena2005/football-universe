@@ -15,8 +15,19 @@ export default function LeyendasPage() {
         {LEGENDS.map((l) => (
           <li key={l.id}>
             <article className="h-full rounded-xl border border-white/10 bg-midnight/60 p-5 transition hover:-translate-y-1 hover:border-gold/60">
-              <h2 className="text-lg font-bold">{l.name}</h2>
-              <p className="text-sm text-gray-400">{l.nationality} · {l.position} · {l.era}</p>
+              <div className="flex items-center gap-4">
+                <div
+                  aria-hidden="true"
+                  className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-pitch/30 text-xl font-bold text-gold ring-1 ring-gold/40"
+                >
+                  {l.name.split(" ").map((p) => p[0]).slice(0, 2).join("")}
+                </div>
+                <div>
+                  <h2 className="text-lg font-bold">{l.name}</h2>
+                  <p className="text-sm text-gray-400">{l.nationality} · {l.position} · {l.era}</p>
+                </div>
+              </div>
+              <p className="mt-1 text-xs text-gray-500">Foto pendiente de licencia.</p>
               <p className="mt-2 text-sm text-gray-500">Clubes: {l.clubs.join(", ")}</p>
               <ul className="mt-3 list-disc pl-5 text-sm text-gray-300">
                 {l.facts.map((f) => <li key={f}>{f}</li>)}
