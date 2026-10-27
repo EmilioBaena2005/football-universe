@@ -11,6 +11,13 @@ export default function CompeticionesPage() {
         Cada torneo tiene su historia y su formato. Los formatos han cambiado con el tiempo, así que compara ediciones con cuidado.
       </p>
 
+      <figure className="mt-8 overflow-hidden rounded-xl border border-white/10">
+        <img src="../fotos/estadio-centenario.jpg" alt="Vista aérea del Estadio Centenario de Montevideo" className="h-auto w-full object-cover" />
+        <figcaption className="px-4 py-2 text-xs text-gray-500">
+          Estadio Centenario, Montevideo: sede de la final del primer Mundial, en 1930. Foto: Marcelo Campi, Wikimedia Commons · CC BY-SA 2.0
+        </figcaption>
+      </figure>
+
       <h2 className="mt-10 text-2xl font-bold">Mundiales por año</h2>
       <div className="mt-4">
         <MundialPicker />
