@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/rivalidades/", label: "Rivalidades" },
   { href: "/mapa/", label: "Mapa" },
   { href: "/trofeos/", label: "Trofeos" },
+  { href: "/estadisticas/", label: "Estadísticas" },
   { href: "/leyendas/", label: "Leyendas" },
   { href: "/competiciones/", label: "Competiciones" },
   { href: "/quiz/", label: "Quiz" },
