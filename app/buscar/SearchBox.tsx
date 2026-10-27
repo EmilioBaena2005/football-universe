@@ -40,7 +40,7 @@ export default function SearchBox() {
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Busca clubes, leyendas, competiciones o años"
         className="w-full rounded-lg bg-midnight px-4 py-3 text-gray-100 ring-1 ring-white/20 focus-visible:outline-2 focus-visible:outline-gold"
-        aria-describedby="sugerencias"
+        aria-controls={suggestions.length > 0 ? "sugerencias" : undefined}
       />
 
       {suggestions.length > 0 && (

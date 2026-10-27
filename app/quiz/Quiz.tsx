@@ -17,12 +17,10 @@ export default function Quiz() {
     if (picked !== null) return;
     setPicked(i);
     if (i === question.answer) {
+      const nextStreak = streak + 1;
       setScore((s) => s + 1);
-      setStreak((s) => {
-        const next = s + 1;
-        setBestStreak((b) => Math.max(b, next));
-        return next;
-      });
+      setStreak(nextStreak);
+      setBestStreak((b) => Math.max(b, nextStreak));
     } else {
       setStreak(0);
     }
