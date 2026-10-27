@@ -21,6 +21,13 @@ export default function HistoriaPage() {
         Del juego de pelota a la industria global. Cada etapa tiene su contexto. Las fechas proceden de FIFA, UEFA y la FA.
       </p>
 
+      <figure className="mt-8 overflow-hidden rounded-xl border border-white/10">
+        <img src="../fotos/maracana-2022.jpg" alt="Vista aérea del estadio del Maracanã en Río de Janeiro" className="h-auto w-full object-cover" />
+        <figcaption className="px-4 py-2 text-xs text-gray-500">
+          Foto: autor del archivo, Wikimedia Commons · CC BY-SA 3.0 (declarada por el autor; pendiente de confirmar en la página del archivo)
+        </figcaption>
+      </figure>
+
       <h2 className="mt-12 text-2xl font-bold">Etapas</h2>
       <ol className="mt-4 space-y-6">
         {ERAS.map((era, i) => (
