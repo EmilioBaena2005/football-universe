@@ -21,12 +21,20 @@ export default function Home() {
       <section className="relative flex min-h-[80vh] flex-col items-center justify-center gap-6 overflow-hidden px-4 py-20 text-center">
         <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-midnight via-night to-night" />
         <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-pitch/30 to-transparent" />
-        <h1 className="text-5xl font-extrabold tracking-tight text-gold md:text-7xl">FOOTBALL UNIVERSE</h1>
-        <p className="text-xl text-gray-200 md:text-2xl">Más de un siglo de pasión. Miles de historias. Un solo deporte.</p>
-        <p className="max-w-2xl text-gray-400">
+        <svg aria-hidden viewBox="0 0 800 500" className="absolute left-1/2 top-1/2 -z-10 h-[120%] w-auto -translate-x-1/2 -translate-y-1/2 text-white/[0.06]" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="20" y="20" width="760" height="460" rx="4" />
+          <line x1="400" y1="20" x2="400" y2="480" />
+          <circle cx="400" cy="250" r="70" />
+          <circle cx="400" cy="250" r="3" fill="currentColor" />
+          <rect x="20" y="130" width="120" height="240" />
+          <rect x="660" y="130" width="120" height="240" />
+        </svg>
+        <h1 className="fade-up text-5xl font-extrabold tracking-tight text-gold md:text-7xl">FOOTBALL UNIVERSE</h1>
+        <p className="fade-up-delay text-xl text-gray-200 md:text-2xl">Más de un siglo de pasión. Miles de historias. Un solo deporte.</p>
+        <p className="fade-up-delay-2 max-w-2xl text-gray-400">
           Explora la evolución del fútbol, los clubes más históricos, sus grandes jugadores y los momentos que cambiaron el deporte.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="fade-up-delay-2 flex flex-wrap justify-center gap-4">
           <Link href="/historia/" className="rounded-lg bg-gold px-6 py-3 font-semibold text-night hover:brightness-110 focus-visible:outline-2 focus-visible:outline-white">
             Explorar la historia
           </Link>
@@ -58,7 +66,7 @@ export default function Home() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {CLUBS.slice(0, 4).map((c) => (
-            <article key={c.id} className="rounded-xl border border-white/10 bg-midnight/60 p-5 transition hover:-translate-y-1 hover:border-gold/60">
+            <article key={c.id} className="card-premium rounded-xl p-5">
               <h3 className="font-bold">{c.name}</h3>
               <p className="text-sm text-gray-400">{c.city}, {c.country}</p>
               <p className="mt-2 text-sm text-gray-300">{c.highlight}</p>
@@ -74,7 +82,7 @@ export default function Home() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {LEGENDS.slice(0, 4).map((l) => (
-            <article key={l.id} className="rounded-xl border border-white/10 bg-midnight/60 p-5 transition hover:-translate-y-1 hover:border-gold/60">
+            <article key={l.id} className="card-premium rounded-xl p-5">
               <h3 className="font-bold">{l.name}</h3>
               <p className="text-sm text-gray-400">{l.nationality} · {l.position}</p>
               <p className="mt-2 text-sm text-gray-300">{l.facts[0]}</p>
