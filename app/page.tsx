@@ -19,8 +19,14 @@ export default function Home() {
   return (
     <main>
       <section className="relative flex min-h-[80vh] flex-col items-center justify-center gap-6 overflow-hidden px-4 py-20 text-center">
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-midnight via-night to-night" />
+        <div aria-hidden className="absolute inset-0 -z-20 overflow-hidden">
+          <img src="fotos/bombonera-noche.jpg" alt="" className="h-full w-full object-cover opacity-40" />
+        </div>
+        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-night/40 via-night/80 to-night" />
         <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-pitch/30 to-transparent" />
+        <p className="absolute bottom-2 right-3 text-[10px] text-gray-500">
+          Foto: Ministerio de Cultura de la Nación, Wikimedia Commons · CC BY-SA 2.0
+        </p>
         <svg aria-hidden viewBox="0 0 800 500" className="absolute left-1/2 top-1/2 -z-10 h-[120%] w-auto -translate-x-1/2 -translate-y-1/2 text-white/[0.06]" fill="none" stroke="currentColor" strokeWidth="2">
           <rect x="20" y="20" width="760" height="460" rx="4" />
           <line x1="400" y1="20" x2="400" y2="480" />
