@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/trofeos/", label: "Trofeos" },
   { href: "/estadisticas/", label: "Estadísticas" },
   { href: "/leyendas/", label: "Leyendas" },
+  { href: "/top/", label: "Top" },
   { href: "/competiciones/", label: "Competiciones" },
   { href: "/quiz/", label: "Quiz" },
   { href: "/buscar/", label: "Buscar" },
