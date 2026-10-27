@@ -9,7 +9,7 @@ type Criterion = "championsLeague" | "libertadores" | "leagueTitles";
 const CRITERIA: { key: Criterion; label: string; note: string }[] = [
   { key: "championsLeague", label: "Copas de Europa / Champions", note: "Fuente: UEFA. Competición oficial de clubes europeos." },
   { key: "libertadores", label: "Copas Libertadores", note: "Fuente: CONMEBOL. Solo clubes sudamericanos." },
-  { key: "leagueTitles", label: "Títulos de liga nacional", note: "Datos parciales: los clubes sin cifra verificada aparecen como pendientes." },
+  { key: "leagueTitles", label: "Títulos de liga nacional", note: "Solo clubes europeos. Los sudamericanos no tienen liga europea en esta tabla." },
 ];
 
 const MAX_CLUBS = 4;

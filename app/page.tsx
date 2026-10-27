@@ -5,7 +5,7 @@ import { CLUBS, LEGENDS, COMPETITIONS, TIMELINE, SOURCES } from "./data";
 const STATS = [
   { value: 22, label: "Ediciones de la Copa Mundial masculina (1930-2022)", source: SOURCES.fifa, date: "Corte: 2022" },
   { value: 32, label: "Selecciones en la fase final del Mundial 2022", source: SOURCES.fifa, date: "Corte: 2022" },
-  { value: 15, label: "Copas de Europa del Real Madrid, el club con más títulos", source: SOURCES.uefa, date: "Corte: 2025" },
+  { value: 15, label: "Copas de Europa del Real Madrid, el club con más títulos", source: SOURCES.uefa, date: "Corte: octubre 2026" },
 ];
 
 const MOMENTS = [

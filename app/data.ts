@@ -25,7 +25,7 @@ export type Club = {
 };
 
 export const CLUBS: Club[] = [
-  { id: "real-madrid", name: "Real Madrid CF", country: "España", city: "Madrid", founded: 1902, stadium: "Santiago Bernabéu", colors: "Blanco", highlight: "Club con más Copas de Europa / Champions League (15 a fecha de corte 2025).", continent: "Europa", source: SOURCES.uefa },
+  { id: "real-madrid", name: "Real Madrid CF", country: "España", city: "Madrid", founded: 1902, stadium: "Santiago Bernabéu", colors: "Blanco", highlight: "Club con más Copas de Europa / Champions League (15 a fecha de corte octubre 2026).", continent: "Europa", source: SOURCES.uefa },
   { id: "barcelona", name: "FC Barcelona", country: "España", city: "Barcelona", founded: 1899, stadium: "Spotify Camp Nou", colors: "Blaugrana", highlight: "Escuela de juego de posesión en los años 2000 y 2010.", continent: "Europa", source: SOURCES.uefa },
   { id: "atletico", name: "Club Atlético de Madrid", country: "España", city: "Madrid", founded: 1903, stadium: "Cívitas Metropolitano", colors: "Rojiblanco", highlight: "Dos finales de Champions League en la década de 2010.", continent: "Europa", source: SOURCES.uefa },
   { id: "athletic", name: "Athletic Club", country: "España", city: "Bilbao", founded: 1898, stadium: "San Mamés", colors: "Rojiblanco", highlight: "Su política de fichajes prioriza a jugadores nacidos o formados en Euskadi.", continent: "Europa", source: SOURCES.uefa },
@@ -39,7 +39,7 @@ export const CLUBS: Club[] = [
   { id: "juventus", name: "Juventus FC", country: "Italia", city: "Turín", founded: 1897, stadium: "Allianz Stadium", colors: "Blanco y negro", highlight: "Récord de títulos de la Serie A.", continent: "Europa", source: SOURCES.uefa },
   { id: "bayern", name: "FC Bayern München", country: "Alemania", city: "Múnich", founded: 1900, stadium: "Allianz Arena", colors: "Rojo", highlight: "Seis Copas de Europa.", continent: "Europa", source: SOURCES.uefa },
   { id: "dortmund", name: "Borussia Dortmund", country: "Alemania", city: "Dortmund", founded: 1909, stadium: "Signal Iduna Park", colors: "Amarillo y negro", highlight: "Su grada sur es la mayor de Europa.", continent: "Europa", source: SOURCES.uefa },
-  { id: "psg", name: "Paris Saint-Germain", country: "Francia", city: "París", founded: 1970, stadium: "Parc des Princes", colors: "Azul y rojo", highlight: "Primera Champions League en 2025.", continent: "Europa", source: SOURCES.uefa },
+  { id: "psg", name: "Paris Saint-Germain", country: "Francia", city: "París", founded: 1970, stadium: "Parc des Princes", colors: "Azul y rojo", highlight: "Campeón de la Champions League en 2025 y 2026.", continent: "Europa", source: SOURCES.uefa },
   { id: "marsella", name: "Olympique de Marsella", country: "Francia", city: "Marsella", founded: 1899, stadium: "Stade Vélodrome", colors: "Blanco y azul celeste", highlight: "Primer club francés en ganar la Champions League (1993).", continent: "Europa", source: SOURCES.uefa },
   { id: "boca", name: "Boca Juniors", country: "Argentina", city: "Buenos Aires", founded: 1905, stadium: "La Bombonera", colors: "Azul y oro", highlight: "Varias Copas Libertadores; su estadio tiene las gradas pegadas al campo.", continent: "Sudamérica", source: SOURCES.conmebol },
   { id: "river", name: "River Plate", country: "Argentina", city: "Buenos Aires", founded: 1901, stadium: "Estadio Monumental", colors: "Blanco y rojo", highlight: "Campeón de la Copa Libertadores en 1986 y 2015, entre otras.", continent: "Sudamérica", source: SOURCES.conmebol },
@@ -161,7 +161,7 @@ export type QuizQuestion = {
 export const QUIZ: QuizQuestion[] = [
   { level: "fácil", q: "¿Qué país acogió la primera Copa Mundial de la FIFA en 1930?", options: ["Italia", "Uruguay", "Brasil", "Argentina"], answer: 1, explain: "Uruguay organizó y ganó el primer Mundial en 1930." },
   { level: "fácil", q: "¿En qué año se fundó la FIFA?", options: ["1863", "1888", "1904", "1930"], answer: 2, explain: "La FIFA se fundó en París en 1904." },
-  { level: "fácil", q: "¿Qué club es el más laureado de la Champions League, con 15 títulos a fecha de corte 2025?", options: ["FC Barcelona", "AC Milan", "Liverpool", "Real Madrid"], answer: 3, explain: "El Real Madrid tiene 15 Copas de Europa a fecha de corte 2025 (UEFA)." },
+  { level: "fácil", q: "¿Qué club es el más laureado de la Champions League, con 15 títulos a fecha de corte octubre 2026?", options: ["FC Barcelona", "AC Milan", "Liverpool", "Real Madrid"], answer: 3, explain: "El Real Madrid tiene 15 Copas de Europa a fecha de corte octubre 2026 (UEFA)." },
   { level: "media", q: "¿Quién marcó el gol de la final del Mundial 2010?", options: ["David Villa", "Andrés Iniesta", "Xavi Hernández", "Fernando Torres"], answer: 1, explain: "Iniesta marcó en la prórroga de la final contra Países Bajos." },
   { level: "media", q: "¿Qué país ganó la primera Copa Libertadores en 1960?", options: ["Brasil", "Argentina", "Uruguay", "Chile"], answer: 2, explain: "Peñarol, de Uruguay, ganó la primera edición en 1960." },
   { level: "media", q: "¿En qué Mundiales ganó Brasil con Pelé en el equipo?", options: ["1950, 1954, 1958", "1958, 1962, 1970", "1962, 1966, 1970", "1994, 1998, 2002"], answer: 1, explain: "Brasil ganó en 1958, 1962 y 1970. Pelé jugó en los tres." },
