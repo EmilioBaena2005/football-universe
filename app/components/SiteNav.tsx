@@ -6,6 +6,8 @@ const LINKS = [
   { href: "/clubes/", label: "Clubes" },
   { href: "/comparador/", label: "Comparador" },
   { href: "/rivalidades/", label: "Rivalidades" },
+  { href: "/mapa/", label: "Mapa" },
+  { href: "/trofeos/", label: "Trofeos" },
   { href: "/leyendas/", label: "Leyendas" },
   { href: "/competiciones/", label: "Competiciones" },
   { href: "/quiz/", label: "Quiz" },
