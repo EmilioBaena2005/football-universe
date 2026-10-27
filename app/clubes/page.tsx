@@ -14,7 +14,7 @@ export default function ClubesPage() {
       <figure className="mt-8 overflow-hidden rounded-xl border border-white/10">
         <img src="../fotos/old-trafford.jpg" alt="Old Trafford, estadio del Manchester United, durante un partido nocturno" className="h-auto w-full object-cover" />
         <figcaption className="px-4 py-2 text-xs text-gray-500">
-          Foto: autor del archivo, Wikimedia Commons · CC BY-SA 4.0 (declarada en el archivo; pendiente de confirmar en la página)
+          Foto: Joris van Rooden, Wikimedia Commons · CC BY-SA 4.0
         </figcaption>
       </figure>
       <div className="mt-8">
