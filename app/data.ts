@@ -60,11 +60,13 @@ export type Legend = {
   clubs: string[];
   facts: string[];
   source: Source;
+  // Foto con licencia libre, solo si está verificada. Sin este campo se muestran iniciales.
+  photo?: { file: string; credit: string; license: string; licenseUrl: string };
 };
 
 export const LEGENDS: Legend[] = [
-  { id: "pele", name: "Pelé", nationality: "Brasil", position: "Delantero", era: "1956-1977", clubs: ["Santos FC", "New York Cosmos"], facts: ["Campeón del Mundo en 1958, 1962 y 1970."], source: SOURCES.fifa },
-  { id: "maradona", name: "Diego Armando Maradona", nationality: "Argentina", position: "Centrocampista", era: "1976-1997", clubs: ["Boca Juniors", "FC Barcelona", "SSC Napoli"], facts: ["Campeón del Mundo en 1986 con Argentina."], source: SOURCES.fifa },
+  { id: "pele", name: "Pelé", nationality: "Brasil", position: "Delantero", era: "1956-1977", clubs: ["Santos FC", "New York Cosmos"], facts: ["Campeón del Mundo en 1958, 1962 y 1970."], source: SOURCES.fifa, photo: { file: "../fotos/pele.jpg", credit: "John Mathew Smith, Wikimedia Commons", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/" } },
+  { id: "maradona", name: "Diego Armando Maradona", nationality: "Argentina", position: "Centrocampista", era: "1976-1997", clubs: ["Boca Juniors", "FC Barcelona", "SSC Napoli"], facts: ["Campeón del Mundo en 1986 con Argentina."], source: SOURCES.fifa, photo: { file: "../fotos/maradona.jpg", credit: "soccer.ru, Wikimedia Commons", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/" } },
   { id: "messi", name: "Lionel Messi", nationality: "Argentina", position: "Delantero", era: "2004-presente", clubs: ["FC Barcelona", "Paris Saint-Germain", "Inter Miami"], facts: ["Campeón del Mundo en 2022 con Argentina."], source: SOURCES.fifa },
   { id: "cristiano", name: "Cristiano Ronaldo", nationality: "Portugal", position: "Delantero", era: "2002-presente", clubs: ["Sporting CP", "Manchester United", "Real Madrid", "Juventus"], facts: ["Cinco Copas de Europa: una con el Manchester United y cuatro con el Real Madrid."], source: SOURCES.uefa },
   { id: "di-stefano", name: "Alfredo Di Stéfano", nationality: "Argentina / España", position: "Delantero", era: "1945-1966", clubs: ["River Plate", "Real Madrid"], facts: ["Cinco Copas de Europa consecutivas con el Real Madrid (1956-1960)."], source: SOURCES.uefa },

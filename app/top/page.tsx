@@ -3,6 +3,16 @@ export const metadata = { title: "Top de leyendas | FOOTBALL UNIVERSE" };
 // No hay un ranking objetivo de los mejores jugadores. Aquí cada lista usa un único criterio, dicho explícitamente.
 // Los datos se limitan a jugadores de la base de datos del proyecto. No es una lista completa de la historia.
 
+const CHAMPIONS_AS_PLAYER = [
+  { name: "Alfredo Di Stéfano", count: 5, years: "1956-1960, con el Real Madrid" },
+  { name: "Cristiano Ronaldo", count: 5, years: "2008 (Manchester United); 2014, 2016, 2017, 2018 (Real Madrid)" },
+  { name: "Xavi Hernández", count: 4, years: "2006, 2009, 2011, 2015, con el FC Barcelona" },
+  { name: "Andrés Iniesta", count: 4, years: "2006, 2009, 2011, 2015, con el FC Barcelona" },
+  { name: "Franz Beckenbauer", count: 3, years: "1974, 1975, 1976, con el Bayern de Múnich" },
+  { name: "Johan Cruyff", count: 3, years: "1971, 1972, 1973, con el Ajax" },
+  { name: "Ronaldinho", count: 1, years: "2006, con el FC Barcelona" },
+];
+
 const BALLON_DOR = [
   { name: "Lionel Messi", count: 8, years: "2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023" },
   { name: "Cristiano Ronaldo", count: 5, years: "2008, 2013, 2014, 2016, 2017" },
@@ -57,6 +67,12 @@ export default function TopPage() {
       </p>
 
       <div className="mt-10 grid gap-6">
+        <Ranking
+          title="Copas de Europa ganadas como jugador"
+          criterion="Número de Copas de Europa / Champions League ganadas como jugador de plantilla que disputó la competición."
+          rows={CHAMPIONS_AS_PLAYER}
+          source="UEFA (uefa.com). Recuento pendiente de contrastar con uefa.com antes de darlo por definitivo."
+        />
         <Ranking
           title="Balones de Oro masculinos"
           criterion="Número de Balones de Oro ganados (premio individual de France Football)."
