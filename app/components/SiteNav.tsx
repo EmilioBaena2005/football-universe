@@ -4,6 +4,7 @@ const LINKS = [
   { href: "/", label: "Inicio" },
   { href: "/historia/", label: "Historia" },
   { href: "/clubes/", label: "Clubes" },
+  { href: "/comparador/", label: "Comparador" },
   { href: "/leyendas/", label: "Leyendas" },
   { href: "/competiciones/", label: "Competiciones" },
   { href: "/quiz/", label: "Quiz" },
